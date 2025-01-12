@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Slider container to define width, height, and overflow behavior */
+.slider {
+  position: relative;
+  width: 100%;  /* or set a fixed width, e.g., 600px */
+  height: 400px; /* Set to your desired height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Horizontally center images */
+  align-items: center; /* Vertically center images */
+}
+
+/* Wrapper for all images inside the slider */
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Ensure images scale and stay centered inside the slider */
+.slider-images img {
+  max-width: 100%;  /* Make sure the images do not overflow horizontally */
+  max-height: 100%; /* Make sure the images do not overflow vertically */
+  object-fit: contain; /* This will ensure the image scales uniformly and is centered */
+  margin: 0 auto;
+}
+
+/* Optional: Style for navigation controls (next, prev buttons) */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider button.prev {
+  left: 10px;
+}
+
+.slider button.next {
+  right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-images">
+          <img src="/assets/images/8.jpeg" alt="Image 1">
+          <img src="/assets/images/8.jpeg" alt="Image 2">
+          <img src="/assets/images/8.jpeg" alt="Image 3">
+        </div>
+      </div>
+      
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider-images img');
+        const totalImages = images.length;
+        
+        function showImage(index) {
+          const sliderImages = document.querySelector('.slider-images');
+          sliderImages.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        document.querySelector('.next').addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % totalImages;
+          showImage(currentIndex);
+        });
+        
+        document.querySelector('.prev').addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+          showImage(currentIndex);
+        });
+        </script>
+        
+</body>
+</html>

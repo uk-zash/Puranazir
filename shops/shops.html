@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops in Pura Nazir Village</title>
+    <link rel="stylesheet" href="../assets/css/shops.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PuraNazir</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../directory/directory.html">Directory</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../school/school.html">School</a></li>
+                <li><a href="../sport/sport.html">Sport</a></li>
+                <li><a href="../farming/farming.html">Farming</a></li>
+                <li><a href="../nearby/nearby.html">Nearby Villages</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <section class="shops">
+        <div class="heading">
+            <h2>Grocery Shops in Pura Nazir</h2>
+            <p>Below is a list of the grocery shops in Pura Nazir village, where you can find daily essentials and more.</p>
+        </div>
+
+        <!-- Shops Grid -->
+        <div class="shop-container">
+            <!-- Shop 1 -->
+            <div class="shop-card">
+                <a href="shop1.html">
+                    <img src="../assets/images/10.jpg" alt="Grocery Shop 1">
+                    <h3>Grocery Shop 1</h3>
+                    <p><strong>Location:</strong> Main Street, Pura Nazir</p>
+                </a>
+            </div>
+
+            <!-- Shop 2 -->
+            <div class="shop-card">
+                <a href="shop2.html">
+                    <img src="../assets/images/10.jpg" alt="Grocery Shop 2">
+                    <h3>Grocery Shop 2</h3>
+                    <p><strong>Location:</strong> Near Pura Nazir Primary School</p>
+                </a>
+            </div>
+
+            <!-- Shop 3 -->
+            <div class="shop-card">
+                <a href="shop3.html">
+                    <img src="../assets/images/10.jpg" alt="Grocery Shop 3">
+                    <h3>Grocery Shop 3</h3>
+                    <p><strong>Location:</strong> Opposite Pura Nazir Market</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: contact@puranazirvillage.com</p>
+        <p>&copy; 2025 PuraNazir Village. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", () => {
+            const navlinks = document.querySelector("header nav ul");
+            navlinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

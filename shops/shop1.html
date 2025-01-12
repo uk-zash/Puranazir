@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop 1 - Pura Nazir Village</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/shop-detail.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PuraNazir</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../directory/directory.html">Directory</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../shops/shops.html">Shops</a></li>
+                <li><a href="../school/school.html">School</a></li>
+                <li><a href="../sport/sport.html">Sport</a></li>
+                <li><a href="../farming/farming.html">Farming</a></li>
+                <li><a href="../nearby/nearby.html">Nearby Villages</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <section class="shop-detail">
+        <div class="shop-heading">
+            <h2>Grocery Shop 1</h2>
+            <p>Located at Main Street, Pura Nazir. Your trusted local grocery shop for daily essentials.</p>
+        </div>
+
+        <div class="shop-images">
+            <img src="../assets/images/10.jpg" alt="Inside Shop 1">
+            <img src="../assets/images/10.jpg" alt="Products at Shop 1">
+            <img src="../assets/images/10.jpg" alt="Shop 1 Exterior">
+        </div>
+
+        <div class="shop-info">
+            <h3>About the Shop</h3>
+            <p><strong>Owner:</strong> Fuzail Bhai Sahawe</p>
+            <p><strong>Location:</strong> Main Street, Pura Nazir</p>
+            <p><strong>Services:</strong> Daily groceries, vegetables, household items, and more.</p>
+            <p><strong>Contact:</strong> 1234567890</p>
+        </div>
+
+        <div class="shop-gallery">
+            <h3>Shop Gallery</h3>
+            <div class="gallery-images">
+                <img src="../assets/images/10.jpg" alt="Products Available">
+                <img src="../assets/images/10.jpg" alt="Shop Interior">
+                <img src="../assets/images/10.jpg" alt="Shop Offerings">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: contact@puranazirvillage.com</p>
+        <p>&copy; 2025 PuraNazir Village. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", () => {
+            const navlinks = document.querySelector("header nav ul");
+            navlinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Nazir Village Directory</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/directory.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>PuraNazir</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../shops/shops.html">Shops</a></li>
+                <li><a href="../school/school.html">School</a></li>
+                <li><a href="../sport/sport.html">Sport</a></li>
+                <li><a href="../farming/farming.html">Farming</a></li>
+                <li><a href="../nearby/nearby.html">Nearby Villages</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <section class="directory">
+        <h2 class="section-title">Village Directory</h2>
+        
+        <!-- Directory Member List -->
+        <div class="directory-list">
+            <div class="member-card">
+                <img src="../assets/images/10.jpg" alt="Member Name" class="member-photo">
+                <div class="info">
+                <h3>Member Name</h3>
+                <p><strong>Role:</strong> Member Role</p>
+                <p><strong>Contact:</strong> Phone Number / Email</p>
+                <p><strong>Location:</strong> Member's Address</p>
+            </div>
+            </div>
+            
+            <!-- Example Member Card -->
+            <div class="member-card">
+                <img src="../assets/images/11.jpeg" alt="John Doe" class="member-photo">
+                <div class="info">
+                <h3>John Doe</h3>
+                <p><strong>Role:</strong> Village Head</p>
+                <p><strong>Contact:</strong> 123-456-7890</p>
+                <p><strong>Location:</strong> Pura Nazir, Azamgarh</p>
+            </div>
+            </div>
+
+            <!-- Add more member cards as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: contact@puranazirvillage.com</p>
+        <p>&copy; 2025 Puranazir Village. All rights reserved.</p>
+    
+    </footer>
+
+    <script>
+        document.querySelector(".hamburger-menu").addEventListener("click", () => {
+            const navlinks = document.querySelector("header nav ul");
+            navlinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
