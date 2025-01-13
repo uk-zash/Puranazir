@@ -32,7 +32,8 @@ body {
     text-align: center;
     font-size: 1.5rem;
     font-family: monospace;
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
 }
 
 .card p {

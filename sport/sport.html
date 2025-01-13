@@ -1,87 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* Slider container to define width, height, and overflow behavior */
-.slider {
-  position: relative;
-  width: 100%;  /* or set a fixed width, e.g., 600px */
-  height: 400px; /* Set to your desired height */
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Horizontally center images */
-  align-items: center; /* Vertically center images */
-}
-
-/* Wrapper for all images inside the slider */
-.slider-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Ensure images scale and stay centered inside the slider */
-.slider-images img {
-  max-width: 100%;  /* Make sure the images do not overflow horizontally */
-  max-height: 100%; /* Make sure the images do not overflow vertically */
-  object-fit: contain; /* This will ensure the image scales uniformly and is centered */
-  margin: 0 auto;
-}
-
-/* Optional: Style for navigation controls (next, prev buttons) */
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 18px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.slider button.prev {
-  left: 10px;
-}
-
-.slider button.next {
-  right: 10px;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports in Pura Nazir</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/sports.css">
 </head>
+
 <body>
-    <div class="slider">
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><h1>Puranazir</h1></div>
+
+    <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../directory/directory.html">Directory</a></li>
+          <li><a href="../gallery/gallery.html">Gallery</a></li>
+          <li><a href="../shops/shops.html">Shops</a></li>
+          <!-- <li><a href="../sport/sport.html">Sport</a></li> -->
+          <li><a href="../farming/farming.html">Farming</a></li>
+          <li><a href="../nearby/nearby.html">Nearby Villages</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+        
+        <span>&#9776;</span>
+    </div>
+</header>
+
+<!-- Slider -->
+
+<section class="hero">
+    <div class="hero-slider">
         <div class="slider-images">
-          <img src="/assets/images/8.jpeg" alt="Image 1">
-          <img src="/assets/images/8.jpeg" alt="Image 2">
-          <img src="/assets/images/8.jpeg" alt="Image 3">
+            <img src="../assets/images/11.jpeg" alt="Purnazir">
+            <img src="../assets/images/10.jpg" alt="Puranazir">
+            <img src="../assets/images/9.jpeg" alt="Puranazir">
         </div>
+    </div>
+
+</section>
+
+
+
+
+
+  <!-- Types of Sports -->
+  <section class="sports-types">
+    <h2>Popular Sports in Pura Nazir</h2>
+    <div class="sports-grid">
+      <!-- Cricket -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Cricket">
+        <h3>Cricket</h3>
+        <p>Cricket is the most beloved sport in Pura Nazir, with annual tournaments and friendly matches played by
+          locals.</p>
       </div>
-      
-      <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.slider-images img');
-        const totalImages = images.length;
-        
-        function showImage(index) {
-          const sliderImages = document.querySelector('.slider-images');
-          sliderImages.style.transform = `translateX(-${index * 100}%)`;
-        }
-        
-        document.querySelector('.next').addEventListener('click', () => {
-          currentIndex = (currentIndex + 1) % totalImages;
-          showImage(currentIndex);
-        });
-        
-        document.querySelector('.prev').addEventListener('click', () => {
-          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-          showImage(currentIndex);
-        });
-        </script>
-        
+      <!-- Volleyball -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Volleyball">
+        <h3>Volleyball</h3>
+        <p>Enjoyed by people of all ages, volleyball tournaments are held regularly in the village’s sports grounds.</p>
+      </div>
+      <!-- Kabaddi -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Kabaddi">
+        <h3>Kabaddi</h3>
+        <p>The village hosts thrilling kabaddi matches, particularly during festivals and community gatherings.</p>
+      </div>
+      <!-- Badminton -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Badminton">
+        <h3>Badminton</h3>
+        <p>A popular indoor sport, badminton provides great opportunities for competition and fun within the village.
+        </p>
+      </div>
+      <!-- Gilli Danda -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Gilli Danda">
+        <h3>Gilli Danda</h3>
+        <p>This traditional game is still enjoyed by children and adults in the streets of Pura Nazir.</p>
+      </div>
+      <!-- Hockey -->
+      <div class="sport-card">
+        <img src="../assets/images/11.jpeg" alt="Hockey">
+        <h3>Hockey</h3>
+        <p>The growing passion for hockey in Pura Nazir has led to the formation of a local team competing regionally.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports Facilities -->
+  <section class="sports-facilities">
+    <h2>Sports Facilities</h2>
+    <div class="facility-grid">
+      <div class="facility-card">
+        <img src="../assets/images/11.jpeg" alt="Cricket Ground">
+        <h3>Cricket Ground</h3>
+        <p>One of the best cricket grounds in the region, used for various tournaments.</p>
+      </div>
+      <div class="facility-card">
+        <img src="../assets/images/11.jpeg" alt="Volleyball Court">
+        <h3>Volleyball Court</h3>
+        <p>Well-maintained court for competitive and recreational volleyball games.</p>
+      </div>
+      <div class="facility-card">
+        <img src="../assets/images/11.jpeg" alt="Badminton Court">
+        <h3>Badminton Court</h3>
+        <p>Indoor court ideal for tournaments and training sessions for badminton enthusiasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Sports Events -->
+  <section class="sports-events">
+    <h2>Local Sports Events & Competitions</h2>
+    <div class="event-list">
+      <div class="event-card">
+        <img src="../assets/images/11.jpeg" alt="Cricket Tournament">
+        <h3>Annual Cricket Tournament</h3>
+        <p>Teams from various villages compete for the championship in this annual event.</p>
+      </div>
+      <div class="event-card">
+        <img src="../assets/images/11.jpeg" alt="Kabaddi Championship">
+        <h3>Kabaddi Championship</h3>
+        <p>Fast-paced and thrilling kabaddi matches held every festival season.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Importance of Sports -->
+  <section class="importance">
+    <h2>The Importance of Sports</h2>
+    <p>Sports play an integral role in promoting physical and mental health, strengthening community ties, and fostering
+      a sense of pride and achievement in Pura Nazir. The local sports culture encourages youth to stay active and
+      engaged, developing discipline, teamwork, and leadership skills that benefit both individual participants and the
+      entire village.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="sports-gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="../assets/images/11.jpeg" alt="Event 1">
+      <img src="../assets/images/11.jpeg" alt="Event 2">
+      <img src="../assets/images/11.jpeg" alt="Event 3">
+      <img src="../assets/images/11.jpeg" alt="Event 4">
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pura Nazir Sports. All rights reserved.</p>
+    <p>Contact: sports@puranazirvillage.com</p>
+  </footer>
+
+
+  <script src="../assets/js/scripts.js"></script>
+
 </body>
+
 </html>

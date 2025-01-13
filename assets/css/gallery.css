@@ -20,7 +20,11 @@ body {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #4CAF50;
+
+}
+
+.gallery h2{
+    color: #206d7a;
 }
 
 /* Gallery Grid */

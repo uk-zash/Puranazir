@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     
 </head>
+<style>
+    .info{
+        padding: 10px;
+        text-align: left;
+    }
+
+    .border{
+        display: none;
+    }
+
+    @media (max-width:768px){
+        .border{
+            border: 1px solid #bdb7b7;
+        }
+    }
+</style>
 
 <body>
     <header>
@@ -37,8 +53,13 @@
     <section class="shops">
         <div class="heading">
             <h2>Grocery Shops in Pura Nazir</h2>
-            <p>Below is a list of the grocery shops in Pura Nazir village, where you can find daily essentials and more.</p>
+            <!-- <p>Below is a list of the grocery shops in Pura Nazir village, where you can find daily essentials and more.</p> -->
         </div>
+
+    
+
+        <!-- <div style="border: 1px solid #bdb7b7;"></div> -->
+        <div class="border"></div>
 
         <!-- Shops Grid -->
         <div class="shop-container">
@@ -46,27 +67,42 @@
             <div class="shop-card">
                 <a href="shop1.html">
                     <img src="../assets/images/10.jpg" alt="Grocery Shop 1">
-                    <h3>Grocery Shop 1</h3>
+                    <div class="info">                    <h3>Grocery Shop 1</h3>
+                        <p><strong>Owner: </strong>xyz</p>
                     <p><strong>Location:</strong> Main Street, Pura Nazir</p>
+                </div>
+
                 </a>
             </div>
 
+            <div class="border"></div>
             <!-- Shop 2 -->
             <div class="shop-card">
                 <a href="shop2.html">
                     <img src="../assets/images/10.jpg" alt="Grocery Shop 2">
+
+                    <div class="info">
                     <h3>Grocery Shop 2</h3>
+                    <p><strong>Owner: </strong>xyz</p>
                     <p><strong>Location:</strong> Near Pura Nazir Primary School</p>
+                </div>
                 </a>
             </div>
 
+
+            <!-- <div style="border: 1px solid #bdb7b7; width: 100%;"></div> -->
+            <div class="border"></div>
             <!-- Shop 3 -->
             <div class="shop-card">
                 <a href="shop3.html">
                     <img src="../assets/images/10.jpg" alt="Grocery Shop 3">
-                    <h3>Grocery Shop 3</h3>
+                    <div class="info">                    <h3>Grocery Shop 3</h3>
+                        <p><strong>Owner: </strong>xyz</p>
                     <p><strong>Location:</strong> Opposite Pura Nazir Market</p>
+                </div>
+
                 </a>
+
             </div>
         </div>
     </section>

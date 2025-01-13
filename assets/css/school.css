@@ -19,7 +19,8 @@ body {
 }
 
 .card h2, .card h3 {
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
     text-align: center;
 }
 
@@ -54,16 +55,18 @@ body {
 }
 
 .event-glimpses h2 {
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .event-glimpses p {
-    text-align: center;
+    text-align: justify;
     font-size: 1.1rem;
     margin-bottom: 20px;
+
 }
 
 .event-images {
@@ -159,7 +162,9 @@ body {
 .member-card h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
+
 }
 
 .member-card p {
@@ -169,6 +174,113 @@ body {
 .member-card strong {
     color: #333;
 }
+
+
+
+.alumni {
+    margin: 40px 0;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.alumni h2 {
+    color: #206d7a;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.alumni p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.alumni-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 60px;
+}
+
+.alumni-member {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.alumni-member .info {
+    padding: 10px 20px;
+}
+
+.alumni-member img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.alumni-member h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #206d7a;
+}
+
+.alumni-member p {
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.alumni-member strong {
+    color: #333;
+}
+
+
+.see-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more .btn-more {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.see-more .btn-more:hover {
+    background-color: #45a049;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .alumni-list {
+        flex-direction: column;
+        
+    }
+
+    .alumni p{
+        text-align: justify;
+    }
+
+    .alumni-member {
+        width: 100%;
+    
+    }
+}
+
+
+
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {

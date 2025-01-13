@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.farming-intro {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+section h2 {
+    text-align: center;
+    color: #206d7a;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #333;
+}
+
+.crops h2{
+    padding-bottom: 25px;
+}
+/* Crops Section */
+.crops .crop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.crop-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.crop-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.crop-card h3 {
+    color: #206d7a;
+    /* margin-top: 15px; */
+    font-size: 2rem;
+
+}
+
+.livestock p{
+    /* text-align: justify; */
+    padding-bottom: 25px;
+}
+
+.farm-equipment p{
+    /* text-align: justify; */
+    padding-bottom: 25px;
+}
+
+.livestock{
+    padding: 0px 30px;
+}
+
+
+
+/* Livestock Section */
+.livestock .livestock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.livestock-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.livestock-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.livestock-card h3 {
+    color: #206d7a;
+    /* margin-top: 15px; */
+    font-size: 2rem;
+}
+
+.farm-equipment{
+    padding: 0px 30px;
+}
+
+/* Farm Equipment Section */
+.farm-equipment .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.equipment-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.equipment-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.equipment-card h3 {
+    color: #206d7a;
+    /* margin-top: 15px; */
+    font-size: 2rem;
+}
+
+.farming-gallery{
+    padding: 0px 30px;
+    padding-bottom: 10px;
+}
+
+/* Gallery Section */
+.farming-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.farming-gallery .gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .farming-intro {
+        padding: 25px;
+        
+    }
+
+    .crops h2{
+        padding-bottom: 0px;
+    }
+
+    .farming-intro p{
+        text-align: justify;
+    }
+
+    .livestock p{
+        text-align: justify;
+        padding-bottom: 25px;
+    }
+
+    .farm-equipment p{
+        text-align: justify;
+        padding-bottom: 25px;
+    }
+
+    .crop-card, .livestock-card, .equipment-card {
+        padding: 15px;
+    }
+}

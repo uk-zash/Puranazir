@@ -23,12 +23,14 @@ body {
 
 .shop-heading h2 {
     font-size: 2rem;
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
 }
 
 .shop-heading p {
     font-size: 1.1rem;
     color: #555;
+    /* text-align: justify; */
 }
 
 .shop-images img {
@@ -45,7 +47,8 @@ body {
 
 .shop-info h3 {
     font-size: 1.5rem;
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
     margin-bottom: 10px;
 }
 
@@ -61,7 +64,8 @@ body {
 
 .shop-gallery h3 {
     font-size: 1.5rem;
-    color: #4CAF50;
+    /* color: #4CAF50; */
+    color: #206d7a;
 }
 
 .shop-gallery .gallery-images {
@@ -76,16 +80,6 @@ body {
     max-width: 300px;
     height: auto;
     border-radius: 8px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Responsive Design for Smaller Screens */
