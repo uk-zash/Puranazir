@@ -22,12 +22,14 @@ body {
 .shops .heading {
     text-align: center;
     margin-bottom: 30px;
+
 }
 
 .shops .heading h2 {
     font-size: 2rem;
     /* color: #4CAF50; */
     color: #206d7a;
+    font-family: monospace;
 }
 
 .shops .heading p {

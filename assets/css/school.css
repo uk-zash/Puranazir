@@ -22,7 +22,9 @@ body {
     /* color: #4CAF50; */
     color: #206d7a;
     text-align: center;
+   font-family: monospace;
 }
+
 
 .card p, .card ul {
     font-size: 1.1rem;
